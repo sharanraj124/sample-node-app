@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:10'
-        }
-    }
+    agent any
     environment {
         APP_NAME = "mean-stack-app"
         GIT_REPO = "https://github.com/sharanraj124/sample-node-app.git"
