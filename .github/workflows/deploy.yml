@@ -1,0 +1,16 @@
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use custom GitHub action from another repository
+        uses: sharanraj124/test-deployment-marker-action@v1.0.0
+        with:
+          api_url: "https://api.atatus.com/v2/projects"
+          api_key: ${{ secrets.API_KEY }}
+          changes: "Bug fix"
+          revision: "abcd1234"
+          release_stage: "staging"
+          project_id: ${{ secrets.PROJECT_ID }}
