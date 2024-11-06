@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use custom GitHub action from another repository
-        uses: sharanraj124/test-deployment-marker-action@v1.0.0
+        uses: sharanraj124/test-deployment-marker-action-ts@v1.0.0
         with:
           api_url: "https://api.atatus.com/v2/projects"
           api_key: ${{ secrets.ATATUS_API_KEY }}
