@@ -1,3 +1,10 @@
+name: Deploy to Atatus
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   example:
     runs-on: ubuntu-latest
