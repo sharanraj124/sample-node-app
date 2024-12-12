@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeDeployment
+  labels:
+    app: node-app
+spec:
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      name: node-app-pod
+      labels:
+        app: node-app
+    spec:
+      containers:
+      - name: node-container
+        image: dev/nodeapp:latest 851725308161.dkr.ecr.us-east-1.amazonaws.com/dev/nodeapp:1.0.0
+        ports:
+        - containerPort: 5100

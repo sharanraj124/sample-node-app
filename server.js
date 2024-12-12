@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.send("express sample app");
 })
 
+app.get('/sample', (req, res) => {
+    res.send("express new app");
+})
+
 
 // write your api's here
 
@@ -23,6 +27,6 @@ app.get('/', (req, res) => {
 // })
 
 
-app.listen(5000, () => {
-    console.log(`app listing http://127.0.0.1:5000`);
+app.listen(5100, () => {
+    console.log(`app listing http://127.0.0.1:5100`);
 })
