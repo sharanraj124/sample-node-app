@@ -1,5 +1,5 @@
 
-FROM node:10
+FROM node:18
 
 # Set the working directory in the container to /app
 WORKDIR /app
