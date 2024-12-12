@@ -42,7 +42,7 @@ jobs:
         run: aws eks update-kubeconfig --name demo-cluster
 
       - name: deploy to eks
-        run:
+        run: |
           kubectl apply -f kubernetes/deployment.yml
           kubectl apply -f kubernetes/service.yml
           kubectl apply -f kubernetes/ingress.yml
