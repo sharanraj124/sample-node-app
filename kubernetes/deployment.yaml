@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node-container
-        image: dev/nodeapp:latest 851725308161.dkr.ecr.us-east-1.amazonaws.com/dev/nodeapp:1.0.0
+        image: 851725308161.dkr.ecr.us-east-1.amazonaws.com/dev/nodeapp:1.0.0
         ports:
         - containerPort: 5100
